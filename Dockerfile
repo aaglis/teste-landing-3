@@ -25,4 +25,4 @@ COPY --from=build /app/package.json ./
 COPY --from=build /app/vite.config.ts ./
 COPY --from=build /app/server.js ./
 EXPOSE 3000
-CMD ["pnpm", "start"]
+CMD ["node", "server.js"]
